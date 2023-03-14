@@ -1,5 +1,5 @@
 using System;
-public class Siddheshwar
+public class Himanshu
 {
     static void Sum(int[] arr)
     {
