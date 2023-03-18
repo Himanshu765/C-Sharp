@@ -1,0 +1,411 @@
+using System;
+class Array
+{
+static void Main( string [] args)
+{
+/*
+PRINT THE ARRAY ELEMENTS :
+int [ ] arr=new int[5];
+for(int i=0;i<5;i++)
+{
+Console.WriteLine(" enter any number");
+arr[i]=Convert.ToInt32(Console.ReadLine());
+}
+for(int i =0;i<5;i++)
+{
+Console.WriteLine(" arrays numbers:"+arr[i]);
+}
+Console.WriteLine(" enter any numbers");
+*/
+/* foreach(int i in arr)
+{
+Console.WriteLine("array numbers"+i);
+} */
+/* EVEN AND ODD NUMBER COUNT
+Console.WriteLine(" enter any numbers");
+int size=Convert.ToInt32(Console.ReadLine());
+int [ ] arr=new int[size];
+int i=0;
+int Count=0,Count1=0;
+Console.WriteLine(" enter the elements of array ");
+while(i<size)
+{
+arr[i]=Convert.ToInt32(Console.ReadLine());
+if(arr[i] %2==0)
+{
+Console.WriteLine(" even number");
+//Count=Count+1;
+}
+else
+{
+Console.WriteLine(" odd number");
+// Count1=Count1+1 ;
+}
+i++;
+}
+//Console.WriteLine(" count the even number"+Count);
+//Console.WriteLine(" count the odd number"+Count1);
+*/
+
+/*
+PRIME NUMBER OF ARRAY
+Console.WriteLine(" enter any size of array");
+int size=Convert.ToInt32(Console.ReadLine());
+int [ ] arr=new int[size];
+int i=0;
+Console.WriteLine(" enter the elements of array"); // input the value of array
+while(i<size)
+{
+arr[i]=Convert.ToInt32(Console.ReadLine());
+i++;
+}
+int j=0;
+int p=0;
+int np=0;
+Console.Write("********************");
+Console.WriteLine();
+while(j<size) // OUTPUT ARRAY AND CHECK PRIME NUMBER
+{
+Console.Write(arr[j]+" ");
+int k=1;
+int count=0;
+while(k<=arr[j])
+{
+if(arr[j]%k==0)
+{
+count++;
+}
+k++;
+}
+if(count==2)
+p=p+1;
+else
+np=np+1;
+
+j++;
+}
+Console.WriteLine("count of the prime number "+p);
+Console.WriteLine(" count of not prime number"+np);
+*/
+/*
+COUNT THE ELEMENTS OF ARRAY
+
+Console.WriteLine(" enter any size of array");
+int size =Convert.ToInt32(Console.ReadLine());
+int []arr =new int [size];
+int i=0;
+while(i<size )
+{
+Console.WriteLine(" enter element of array");
+arr[i]=Convert.ToInt32(Console.ReadLine());
+i++;
+}
+Console.WriteLine();
+int j=0;
+int count=0;
+while(j<size )
+{
+Console.WriteLine(arr[j]);
+count++;
+j++;
+}
+Console.WriteLine(" count of the elements"+count);
+*/
+/*
+Reverse element of array:
+Console.WriteLine(" enter any size of array");
+int size = Convert.ToInt32(Console.ReadLine());
+int [] arr=new int [size];
+int i=0;
+Console.WriteLine(" enter the element of array");
+while(i<arr.Length)
+{
+arr[i]=Convert.ToInt32(Console.ReadLine());
+i++;
+}
+int j=0;
+while(j<arr.Length)
+{
+Console.Write(" array elements");
+Console.WriteLine(arr[j]+" ");
+j++;
+}
+int k;
+k=arr.Length-1;
+Console.WriteLine();
+Console.WriteLine(" array reverse elements");
+while(k>=0)
+{
+Console.Write(arr[k]+" ");
+k--;
+}
+*/
+
+/*
+searching the element of array
+int [ ]arr={22,11,43,55,44,77,33,53};
+bool flag= false;
+Console.WriteLine(" enter the element");
+int search=Convert.ToInt32(Console.ReadLine());
+for (int i=0;i<arr.Length;i++)
+{
+if(arr[i]==search)
+{
+flag=true;
+Console.WriteLine(" element id found ");
+break;
+}
+}
+if(flag==false)
+{
+Console.WriteLine(" element is not found ");
+}
+
+*/
+/*
+SORTING ASCENDING ORDER IN ARRAY
+int [ ] arr={1,2,4,3,88,44,22,11,8};
+int m=0;
+while(m<arr.Length)
+{
+Console.WriteLine(" "+arr[m]);
+m++;
+}
+Console.WriteLine();
+Console.WriteLine(" *******************************");
+Console.WriteLine(" process:");
+
+int i,j,temp;
+i=0;
+j=0;
+while(i<arr.Length)
+{
+j=i+1;
+
+while(j<arr.Length)
+{
+if(arr[i]>arr[j])
+{
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+j++;
+}
+i++;
+}
+//for (int k=0;k<arr.Length;k++)
+int k=0;
+while(k<arr.Length)
+{
+Console.WriteLine(" "+arr[k]);
+k++;
+}
+*/
+/*
+sorting Descending order
+int [ ] arr={1,2,4,3,88,44,22,11,8};
+int m=0;
+while(m<arr.Length)
+{
+Console.WriteLine(" "+arr[m]);
+m++;
+}
+Console.WriteLine();
+Console.WriteLine(" *******************************");
+Console.WriteLine(" process:");
+
+int i,j,temp;
+i=0;
+j=0;
+while(i<arr.Length)
+{
+j=i+1;
+while(j<arr.Length)
+{
+if(arr[i]<arr[j])
+{
+temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+j++;
+
+}
+i++;
+}
+//for (int k=0;k<arr.Length;k++)
+int k=0;
+while(k<arr.Length)
+{
+Console.WriteLine(" "+arr[k]);
+k++;
+}
+*/
+/*
+SUM of array elements
+int [ ] arr={1,2,3,4,5,6,7,8,9,10};
+int i=0;
+int sum=0;
+while(i<arr.Length)
+{
+Console.WriteLine(" "+arr[i]);
+sum=sum+arr[i];
+i++;
+}
+Console.WriteLine(" sum of array elements: "+sum);
+*/
+
+// Double value elements of array
+/*
+int [] arr ={22,33,44,55};
+int doub=0;
+for(int i=0;i<arr.Length;i++)
+{
+Console.WriteLine(arr[i]);
+}
+Console.WriteLine(" **********************************");
+for (int j=0;j<arr.Length;j++)
+{
+Console.WriteLine(2*arr[j]);
+}
+
+*/
+/*
+Cube element of arrays
+int [] arr ={2,3,4,5};
+for(int i=0;i<arr.Length;i++)
+
+{
+Console.WriteLine(arr[i]);
+}
+Console.WriteLine(" **********************************");
+Console.WriteLine(" cube element of array ");
+for (int j=0;j<arr.Length;j++)
+{
+Console.WriteLine(arr[j]*arr[j]*arr[j]);
+}
+*/
+/*
+Square element of array
+int [] arr ={10,20,30,40};
+for(int i=0;i<arr.Length;i++)
+{
+Console.WriteLine(arr[i]);
+}
+Console.WriteLine(" **********************************");
+Console.WriteLine(" square element of array ");
+for (int j=0;j<arr.Length;j++)
+{
+Console.WriteLine(arr[j]*arr[j]);
+}
+
+*/
+/*
+MAXIMUM VALUE OF ARRAY:
+Console.WriteLine(" enter any size of array");
+int size = Convert.ToInt32(Console.ReadLine());
+int [] arr=new int [size];
+int i=0;
+Console.WriteLine(" enter the element of array");
+while(i<arr.Length)
+{
+arr[i]=Convert.ToInt32(Console.ReadLine());
+i++;
+}
+int j=0;
+while(j<arr.Length)
+{
+Console.Write(" array elements");
+
+Console.WriteLine(arr[j]+" ");
+j++;
+}
+Console.WriteLine(" *****************************");
+int max=0;
+int k=0;
+while( k< arr.Length)
+{
+if(arr[k]> max)
+max=arr[k];
+k++;
+}
+Console.WriteLine("maximum value of array : "+max);
+*/
+/*
+MINIMUM VALUE OF ARRAY
+Console.WriteLine(" enter any size of array");
+int size = Convert.ToInt32(Console.ReadLine());
+int [] arr=new int [size];
+int i=0;
+Console.WriteLine(" enter the element of array");
+while(i<arr.Length)
+{
+arr[i]=Convert.ToInt32(Console.ReadLine());
+i++;
+}
+int j=0;
+while(j<arr.Length)
+{
+Console.Write(" array elements");
+Console.WriteLine(arr[j]+" ");
+j++;
+}
+Console.WriteLine(" *****************************");
+int min=2147483647;
+int k=0;
+while( k< arr.Length)
+{
+if(arr[k]< min)
+min =arr[k];
+k++;
+}
+Console.WriteLine("minimum value of array : "+min);
+*/
+
+		int [ ] arr={1,2,4,4,3,88,44,22,22,11,8};
+		int m=0;
+		while(m<arr.Length)
+	{
+		Console.WriteLine(" "+arr[m]);
+		m++;
+	}
+		Console.WriteLine();
+		Console.WriteLine(" *******************************");
+		Console.WriteLine(" process:");
+
+		int i,j,temp;
+		i=0;
+		j=0;
+		while(i<arr.Length)
+		{
+		j=i+1;
+
+		while(j<arr.Length)	
+		{
+		if(arr[i]>arr[j])
+		{
+		temp=arr[i];
+		arr[i]=arr[j];
+		arr[j]=temp;
+		int array distinct();	
+		
+		}
+		
+		j++;
+	}
+			i++;
+}
+
+int k=0;
+while(k<arr.Length)
+{
+Console.WriteLine(" "+arr[k]);
+k++;
+}
+
+
+
+}
+}
+
