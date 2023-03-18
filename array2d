@@ -1,0 +1,355 @@
++using System;
++class Test
++{
++static void Main()
++{
++// REVERSE PROGRAM 2D ARRAY
++/*
++
++Console.Write(" enter the base array");
++int bas =Convert.ToInt32(Console.ReadLine());
++Console.Write(" enter the sub array");
++int sub =Convert.ToInt32(Console.ReadLine());
++int [,]arr=new int [bas,sub];
++int i , j;
++for (i=0;i<arr.GetLength(0);i++)
++{
++for (j=0;j<arr.GetLength(1);j++)
++{
++Console.Write(" [ " + i + " , " + j + " ] " );
++arr[ i , j ] = Convert.ToInt32(Console.ReadLine());
++Console.WriteLine();
++}
++}
++int x ,y;
++for(x=0;x<arr.GetLength(0);x++)
++{
++for (y=0;y<arr.GetLength(1);y++)
++{
++Console.Write(" "+ arr[x,y]);
++}
++Console.WriteLine();
++}
++Console.WriteLine(" *******************************");
++int m ,n;
++for( m=arr.GetLength(0)-1;m>=0;m--)
++{
++for(n=arr.GetLength(1)-1;n>=0;n--)
++{
++Console.Write(" "+ arr[m,n]);
++}
++Console.WriteLine();
++}
++*/
++/*
++CHECK THE PRIME NUMBER
++
++Console.WriteLine(" enter any base array");
++int bas=Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array");
++
++int sub=Convert.ToInt32(Console.ReadLine());
++int [,]arr = new int [bas,sub];
++int i,j;
++for(i=0;i<arr.GetLength(0);i++)
++{
++for (j=0;j<arr.GetLength(1);j++)
++{
++Console.Write( "[ " +i + ", " +j + " ]" );
++arr[i,j]=Convert.ToInt32(Console.ReadLine());
++}
++}
++
++Console.Write("********************");
++Console.WriteLine();
++for (int x=0;x<arr.GetLength(0);x++)
++{
++for ( int y=0;y<arr.GetLength(1);y++)
++{
++Console.Write(" " + arr[x,y]);
++}
++Console.WriteLine();
++}
++int p=0;
++int np=0;
++for (int m=0;m<arr.GetLength(0);m++)
++{
++for (int n=0;n<arr.GetLength(1);n++)
++{
++// OUTPUT ARRAY AND CHECK PRIME NUMBER
++int k=1;
++int count=0;
++while(k<=arr[m,n])
++{
++if(arr[m,n]%k==0)
++{
++count++;
++}
++k++;
++}
++if(count==2)
++p=p+1;
++// Console.WriteLine(" prime number");
++else
++np=np+1;
++// Console.WriteLine(" not a prime number");
++
++}
++}
++Console.WriteLine(" count the prime number"+p);
++Console.WriteLine(" count the not prime number"+np);
++*/
++/*
++CHECK THE ARRAY NUMBER POSITIVE AND NEGATIVE :
++Console.WriteLine(" enter any base array: ");
++int bas = Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++int sub=Convert.ToInt32(Console.ReadLine());
++int [ ,]arr=new int [bas,sub];
++int x,y;
++int pos=0;
++int neg=0;
++for (x=0;x<arr.GetLength(0);x++)
++{
++for (y=0;y<arr.GetLength(1);y++)
++{
++Console.Write("[ " +x +" ," +y + " ] ");
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++if(arr [x,y]>=0)
++{
++pos++;
++Console.WriteLine("positive number"+arr[x,y]);
++}
++else
++{
++neg++;
++Console.WriteLine("negative number"+arr[x,y]);
++}
++}
++}
++Console.WriteLine(" count the positive number"+pos);
++Console.WriteLine(" count the negative number"+neg);
++*/
++/*
++COUNT THE VALUE OF ARRAY ELEMENTS :
++Console.WriteLine(" enter any base array: ");
++int bas = Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++
++int sub=Convert.ToInt32(Console.ReadLine());
++int [ ,]arr=new int [bas,sub];
++int x,y;
++int count=0;
++for (x=0;x<arr.GetLength(0);x++)
++{
++for (y=0;y<arr.GetLength(1);y++)
++{
++Console.Write("[ " +x +" ," +y + " ] ");
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++count++;
++}
++}
++Console.WriteLine(" count the value of element "+count);
++*/
++/*
++DOUBLE VALUE OF ARRAY ELEMENTS:
++Console.WriteLine(" enter any base array: ");
++int bas = Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++int sub=Convert.ToInt32(Console.ReadLine());
++int [ ,]arr=new int [bas,sub];
++int x,y;
++for (x=0;x<arr.GetLength(0);x++)
++{
++for (y=0;y<arr.GetLength(1);y++)
++{
++Console.Write("[ " +x +" ," +y + " ] ");
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++}
++Console.WriteLine();
++}
++
++int i,j;
++for(i=0;i<arr.GetLength(0);i++)
++{
++for(j=0;j<arr.GetLength(1);j++)
++{
++Console.Write(" " + 2 * arr[i,j]);
++}
++Console.WriteLine();
++
++}
++*/
++/*
++sum of array elements :
++Console.WriteLine(" enter any base array : ");
++int bas=Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++int sub=Convert.ToInt32(Console.ReadLine());
++int [,] arr=new int [bas,sub];
++for(int x=0;x<arr.GetLength(0);x++)
++{
++for(int y=0;y<arr.GetLength(1);y++)
++{
++Console.Write( " [ " + x + " ," +y +" ]");
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++
++}
++}
++int sum=0;
++for(int i=0;i<arr.GetLength(0);i++)
++{
++for(int j=0;j<arr.GetLength(1);j++)
++{
++Console.Write(" "+arr[i,j]);
++sum=sum+arr[i,j];
++}
++Console.WriteLine();
++}
++Console.WriteLine(" sum of array element " +sum);
++*/
++/*
++MAXIMUM VALUE OF 2D ARRAY
++Console.WriteLine(" enter any base array : ");
++int bas=Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++int sub=Convert.ToInt32(Console.ReadLine());
++int [,] arr=new int [bas,sub];
++for(int x=0;x<arr.GetLength(0);x++)
++{
++for(int y=0;y<arr.GetLength(1);y++)
++{
++Console.Write( " [ " + x + " ," +y +" ]");
++
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++
++}
++}
++int max=0;
++for(int i=0;i<arr.GetLength(0);i++)
++{
++for(int j=0;j<arr.GetLength(1);j++)
++{
++
++if (arr[i,j]>max)
++{
++max=arr[i,j];
++}
++} }
++Console.WriteLine(" maximum number of array "+max);
++*/
++/*
++minimum value of 2d array
++Console.WriteLine(" enter any base array : ");
++int bas=Convert.ToInt32(Console.ReadLine());
++Console.WriteLine(" enter any sub array: ");
++int sub=Convert.ToInt32(Console.ReadLine());
++int [,] arr=new int [bas,sub];
++for(int x=0;x<arr.GetLength(0);x++)
++{
++for(int y=0;y<arr.GetLength(1);y++)
++{
++Console.Write( " [ " + x + " ," +y +" ]");
++arr[x,y]=Convert.ToInt32(Console.ReadLine());
++
++}
++}
++int min=2147483647;
++for(int i=0;i<arr.GetLength(0);i++)
++{
++for(int j=0;j<arr.GetLength(1);j++)
++{
++
++if (arr[i,j]<min)
++{
++min=arr[i,j];
++}
++} }
++Console.WriteLine(" minimum number of array "+min);
++
++*/
++/*
++ELEMENTS SEARCH IN 2D ARRAY
++Console.Write(" enter the base array");
++int bas =Convert.ToInt32(Console.ReadLine());
++Console.Write(" enter the sub array");
++int sub =Convert.ToInt32(Console.ReadLine());
++int [,]arr=new int [bas,sub];
++int i , j;
++for (i=0;i<arr.GetLength(0);i++)
++{
++for (j=0;j<arr.GetLength(1);j++)
++{
++Console.Write(" [ " + i + " , " + j + " ] " );
++arr[ i , j ] = Convert.ToInt32(Console.ReadLine());
++Console.WriteLine();
++}
++}
++Console.WriteLine(" enter the element of search ");
++int search = Convert.ToInt32(Console.ReadLine());
++bool flag=false;
++int x,y;
++for (x=0;x<arr.GetLength(0);x++)
++{
++for (y=0;y<arr.GetLength(1);y++)
++{
++if(arr[x,y]==search)
++{
++flag=true;
++Console.WriteLine(" found is element");
++break;
++}
++}
++}
++if(flag==false)
++{
++Console.WriteLine(" not found element in array");
++}
++*/
++int [,] arr= new int [3,4]
++{
++{12,21,11,4},
++{23,54,43,44},
++{55,87,98,34}
++
++}; int j,i;
++for ( i=0;i<arr.GetLength(0);i++)
++{
++for (j=0;j<arr.GetLength(1);j++)
++{
++Console.Write(arr[i,j]+ " ");
++}
++Console.WriteLine();
++}
++Console.WriteLine();
++Console.WriteLine(" *******************************");
++Console.WriteLine(" process:");
++
++int temp=0;
++for(int m =0;m<arr.GetLength(0);m++)
++{
++for(int n=0;n<arr.GetLength(1);n++)
++{
++for (int o=0;o<arr.GetLength(0);o++)
++{
++for(int p=0;p<arr.GetLength(1);p++)
++{
++if (arr[m,n]>arr[o,p])
++temp=arr[m,n];
++arr[m,n]= arr[o,p];
++arr[o,p]=temp;
++}
++}
++}
++}
++for(int k=0;k<arr.GetLength(0);k++)
++{
++for(int l=0;l<arr.GetLength(1);l++)
++{
++Console.Write(arr[k,l] +" ");
++}
++Console.WriteLine();
++}
++}
++}
++
