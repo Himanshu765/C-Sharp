@@ -1,0 +1,242 @@
+using System;
+class Hello
+{
+	/*    FIRST QUESTION 
+		void m1()   // non static  method 
+		{
+			
+			Console.WriteLine("  non static ");
+				
+			m2();
+		}
+		
+		
+		static void Main()  // static method  
+	{ 
+			 Console.WriteLine("In");
+			 Hello a=new Hello();    
+			 a.m1();
+			 Console.WriteLine(" main   ");
+	}
+	
+			 
+		static void m2()   // static method 
+			{
+				Console.WriteLine(" static ");
+			}
+				*/
+	
+/*
+				SECOND QUESTION 
+		
+		void m1()  // non static
+		{
+			Console.WriteLine("A");
+		}
+		static void m2()  // static method 
+		{
+			Console.WriteLine("X");
+			Hello a1=new Hello();
+			a1.m1();
+			
+			Console.WriteLine("Y");
+		}
+		void m3()  // non static method
+		{
+			Console.WriteLine(" 0");
+			m2();
+			Console.WriteLine("1");
+		}
+		
+      static void Main()
+		{
+			Console.WriteLine(" IN");
+			Hello a=new Hello();
+			a.m3();
+			Console.WriteLine("OUT");
+		}
+					// in 0 xay 1 out 
+}		
+      */
+	  
+		/*
+		 THIRD QUESTION
+		 
+		static void  m()
+		{
+			Console.WriteLine("Hi");
+		}
+		void m1()
+		{
+			Console.WriteLine(" Hello");
+			m();
+			Console.WriteLine("10");
+		}
+		 static void bye ()
+		 {
+			 Console.WriteLine(" In");
+			 Hello h=new Hello();
+			 h.  m1();
+			 Console.WriteLine("20");
+		 }
+		 static  void Main ()
+		 {
+			Console.WriteLine(" out ");
+			bye();
+		 }
+		 // out in hello hi 10 20 
+}	
+	*/
+	
+/* *************************************************************************************************************************************************** */
+//				Conversion Questions and problems
+
+	    // float to double    (4 byte to 8 byte )    implicit
+		/*
+		float a=100.065F;
+		double num =( double)a;
+		Console.WriteLine(num);     //OUTPUT 	100.065002441406
+		*/
+		
+		  //double to float  (8 byte to 4 byte)   explicit
+		  /*
+		double  a=100.0655456545654D;    // OUTPUT		100.0655
+		float  num=( float)a;
+		Console.WriteLine(num);
+		*/
+		
+		
+				// int to char(4 byte  to  2 byte  )    
+		/*
+		int  a =30;
+		char c=(char)a;
+		Console.WriteLine(c);      // OUTPUT	▲
+		*/
+				// char to int  ( 2 byte to 4 byte )
+		/*
+		char c = 'a';
+		int n=(int)c;
+		Console.WriteLine(n);  //   OUTPUT		97
+		*/
+				//char to float    ( 2 byte to 4 byte )
+		/*		
+			char c = 'A';
+		float n = c; // (float) c;
+		Console.WriteLine(n);    // OUTPUT 65
+		*/
+		
+		// float to char
+		
+		/*		
+		float  f =30.30F;
+		char c=(char )f;
+		Console.WriteLine(c);      // OUTPUT	▲
+		*/
+		
+		/*
+		float to long  
+		
+		float  a = 102.54f;
+		long  l=(long)a;
+		Console.WriteLine(l);     // output    102 
+		*/
+		
+		/*
+				long to int
+		
+		long n=9223337203685477L;
+		int num=(int)n;						// output 	-1985259419
+		Console.WriteLine( num);
+		*/
+		
+		// Reference to  value type       :  Type conversion
+		/*
+		string to int 
+		string s =" 100";
+		int num=Convert.ToInt32(s);
+		
+		Console.WriteLine(num);
+		*/
+		
+		//  string to float
+		/*
+		string s =" 100.098";
+		float num= Convert.ToSingle(s);
+		Console.WriteLine(num);
+		*/
+		
+		/*
+				string to double 
+		string s =" 100.0984356365";
+		double num= Convert.ToDouble(s);
+		Console.WriteLine(num);
+		*/
+			
+			/*
+				//string to long  
+		string s =" -10009843563654353";
+		long  num= Convert.ToInt64(s);
+		Console.WriteLine(num);   */
+	
+				// string  to ulong 
+		 /*		
+		string s =" 10009843563654353";
+		ulong  num= Convert.ToUInt64(s);
+		Console.WriteLine(num);
+		*/
+		/*
+		string s = " e";
+		char num= Convert.ToChar(s);
+		Console.WriteLine(num);
+		*/
+		/*
+		string str = "S";
+            char c = char.Parse(str);
+            Console.WriteLine(c);
+       */
+	   
+	   //num to object
+	   /*
+	    int num=100;
+		object num1=num;
+		Console.WriteLine(num1);
+		*/
+		
+		
+		//object to num
+		/*
+		object num1=100;
+		int num=Convert.ToInt32(num1); //  ToInt32(Object)
+		Console.WriteLine(num);
+		*/
+		/*
+		static void Main()
+		{    */
+		/*  int to byte(4 to 1)
+		int n=1234;
+		byte num= (Byte)n;
+		Console.WriteLine(num);
+		*/
+		
+		/*
+		int n=333;
+		sbyte num=Convert.ToSByte(n);
+		Console.WriteLine(num);
+		*/
+		/*
+		byte n=1;
+		int num= (int )n;
+		Console.WriteLine(num);
+	*/
+		
+		
+		
+		
+		
+	
+	
+		
+	
+		
+	
+	 
