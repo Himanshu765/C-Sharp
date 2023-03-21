@@ -1,0 +1,88 @@
+/*class Employee
+{
+	private static string empcompanyname;
+	public static string Empcompanyname
+	{
+		set
+		{
+			empcompanyname=value;
+		}
+		get{
+			 return empcompanyname;
+		}
+		
+	}
+}
+class Test 
+{
+static void Main()
+{
+	Employee.Empcompanyname=" Chetu";
+	Console.WriteLine(Employee.Empcompanyname);
+	
+}
+}    */
+
+/*
+
+Get set  property with if condition 
+class Employee
+{
+	private int empsal;
+	public int Empsal
+	{
+		set 
+		{
+			if (value && value <=1000)
+			{
+			empsal=value;
+			}
+			
+		}
+		get{return empsal;}
+	}
+}
+
+
+class test
+{
+	static void Main()
+	{
+		Employee emp=new Employee();
+		emp.Empsal=1100;
+		Console.WriteLine(emp.Empsal);
+	}
+}
+
+
+class Employee
+{
+	private int empsal;
+	public int Empsal
+	{
+		set 
+		{
+			if(value>=0 && value <=1000)
+			{
+			empsal=value;
+			}
+			else
+			Console.WriteLine(" not assign the  value ");
+			
+		}
+		get{return empsal;}
+	}
+}
+
+
+class test
+{
+	static void Main()
+	{
+		Employee emp=new Employee();
+		emp.Empsal=1001;
+		Console.WriteLine(emp.Empsal);
+	}
+}
+*/
+
