@@ -1,0 +1,63 @@
+using System;
+class Himanshu 
+{
+    private int a;
+    private float b;
+    private double c;
+		   
+    public Himanshu(int num , float num2 , double num3)    // Construtor...
+	{
+	  a = num;
+	  b=  num2;
+	  c = num3;
+	}
+
+	public int Add // Properties... 
+	{
+	    get
+	    {
+	     return a;   
+	    }
+		
+	}
+	
+	public float Add1 // Properties... 
+	{
+	    get
+	    {
+	     return b;   
+	    }
+		
+	}
+	
+	public double Add2// Properties... 
+	{
+	    get
+	    {
+	     return c;   
+	    }
+		
+	}
+		 
+} 
+
+class  Chauhan 
+{
+    static void Main()
+	{
+		Console.Write("Enter the value :");
+		char num = char.Parse(Console.ReadLine());
+		
+		Console.Write("Enter the value :");
+		char num2 = char.Parse(Console.ReadLine());
+		
+		Console.Write("Enter the value :");
+		char num3 = char.Parse(Console.ReadLine());
+		
+		Himanshu obj = new Himanshu(num,num2,num3);
+		
+		Console.Write("Given value is here : " + obj.Add+""+ obj.Add1+""+ obj.Add2);
+		
+	}
+	
+}
