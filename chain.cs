@@ -1,7 +1,7 @@
 using System;
 /*
+//***********************************************************************************************
 		CONSTRUCTOR CHAINING USING SINGLE INHERITANCE
-
 class Grand 
 {
 	public Grand()
@@ -9,7 +9,6 @@ class Grand
 		Console.WriteLine(" Grand");
 	}
 }
-
 class father :   Grand
 {
 	public father()
@@ -17,7 +16,6 @@ class father :   Grand
 		Console.WriteLine(" father");
 	}
 }
-
 class child :  father
 {
 	public child ()
@@ -32,6 +30,7 @@ class child :  father
 }
 */
 
+//*********************************************************************************************
 //	CHAINING USING   PARAMETERIZED 		CONSTRUCTOR 
  
 /*
@@ -42,7 +41,6 @@ class Grand
 		Console.WriteLine(" Grand"+x);
 	}
 }
-
 class father :  Grand
 {
 	public father(int x ): base(100)
@@ -50,7 +48,6 @@ class father :  Grand
 		Console.WriteLine(" father"+x);
 	}
 }
-
 class child :  father
 {
 	public child (int x): base (200)
@@ -93,10 +90,13 @@ class test
 		test t = new test(100.100d);
 	}
 }
-
 */
 
+//**************************************************************************************
+
+
 /*
+		FIRST METHOD USING  USER DEFINED DATA TYPE 
 
 class Address 
 {
@@ -119,13 +119,12 @@ class Address
 	}
 	
 }
-
 class Employee
 {
 		private int _empno;
 		private string  _empname;
 		private Address _empaddress;
-		
+	  	
 	public int Empno
 	{
 		get;set;
@@ -142,7 +141,6 @@ class Employee
 	}
 		
 }
-
 class chetu
 {
 	static void Main()
@@ -157,13 +155,12 @@ class chetu
 	Console.WriteLine(" Address  is  "+emp.Empaddress);
 	}
 }
-
 */
-
-
+//*********************************************************************************
 /*
 
 class Address 
+		// SECOND METHOD USING  USER DEFINED DATA TYPE 
 {
 	// using property 
 	
@@ -175,17 +172,22 @@ class Address
 	{
 		get; set;
 	} 
-			public string Housename
-	{
+	public string Housename
+		{
 		get; set;
-	} 	 
+		} 	 
 		public int Pincode
 	{
 		get; set;
-	} 	
+	}
 
-}
-
+	public override string ToString()
+	{
+		{
+		 return  Houseno +"  " + Housename +"  "+Pincode;
+		}
+	}
+}	
 class Employee
 {
 	// using Constructor
@@ -196,20 +198,30 @@ class Employee
 		
 	public Employee ( int empno, string empname,  Address empaddress)
 	{
-		empno=_empno;
-		empname=_empname;
-		empaddress = _empaddress;
+		_empno=empno;
+		_empname=empname;
+		_empaddress = empaddress;
+	
 	}
 	
-	public override string ToString()
+	public int EmpNo
 	{
-		return  _empno +"   " +_empname + "   "+_empaddress;
+		get{return _empno;}
 		
 	}
-
+	public string  EmpName
+	{
+		get{return _empname;}
+	}
+		
+	public Address EmpAddress
+	{
+		get{return _empaddress;}
+		
+	}
+	
 		
 }
-
 class chetu
 {
 	static void Main()
@@ -437,10 +449,3 @@ class Test
 	}
 }
 */
-
-
-
-
-
-
-
