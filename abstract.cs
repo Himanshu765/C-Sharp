@@ -151,5 +151,35 @@ class ICICI:RBI
 	}
 }
 
+abstract class Test 
+{
+	public abstract void sum();	
+}
+
+class Demo:Test 
+{
+	public override void sum()
+	{
+		Console.WriteLine(" hi" );
+	}	
+}
+class  D: Test 
+{
+	public   override void sum()
+	{
+		Console.WriteLine(" BYE");
+		base .sum();   //Cannot call an abstract base member: 'Test.sum()'
+	}
+}
+
+class M1
+{
+	static void Main()
+	{
+		Test t = new D();
+		t.sum();
+	}	
+}
+*/
 
 
