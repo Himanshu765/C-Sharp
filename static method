@@ -22,9 +22,9 @@ class Test
 {
   static void Main (string[]args)
   {
-    //Student st1 = new Student(101, "vivek");
-    //Student st2 = new Student(102, "Ramesh");
-    //Student st3 = new Student(103, "Suresh");
+    //Student st1 = new Student(101, "Himanshu");
+    //Student st2 = new Student(102, "Arpit ");
+    //Student st3 = new Student(103","Tushar");
     //System.Console.WriteLine(st3);
     //System.Console.WriteLine(st2);
 
