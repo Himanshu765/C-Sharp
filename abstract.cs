@@ -183,3 +183,124 @@ class M1
 */
 
 
+//*****************************************
+/* 
+ abstract class Details  
+    {
+        public abstract string Name 
+        {get; set;}
+
+        public abstract int Id 
+        {get; set;}                                                                                                 
+    }                   
+
+    class User : Details
+    {
+        private string city = "  ";
+        private int id = 0;
+        public string City 
+        {set
+            {
+            city = value;
+            }
+            get
+            {
+            return city;
+            }
+        }
+
+
+        public override string Name 
+
+        {
+
+            get
+
+            {
+
+                return name;
+
+            }
+
+            set
+
+            {
+
+                name = value;
+
+            }
+
+        }
+
+               
+
+        public override int Id       // Declare 
+        
+        abstract Id property:
+
+        {
+
+            get
+
+            {
+
+                return id;
+
+            }
+
+            set
+
+            {
+
+                id = value;
+
+            }
+
+        }
+
+        public override string ToString()
+
+        {
+
+            return "Id= "  + Id + ",   Name= " + Name + ",   City= " + City ;
+
+}
+     static void Main()
+
+        {
+            User us1 = new User();   
+
+            us1.City = "Noida"; 
+
+            us1.Name = "Arvind";
+
+            us1.Id = 100;
+
+            Console.WriteLine("Student Info:- {0}", us1);
+
+            us1.Id += 1;                //let us increase Id
+
+            Console.WriteLine("Student Info:- {0}", us1);
+        }}
+        */
+ abstract class Bank
+ {
+	 public abstract int sum
+	 {get;set;}
+ } 
+ 
+ class HDFC:Bank
+ {
+	 public  override int sum{get;set;}
+ }
+ class ICICI:Bank
+ {
+	 public  override int sum{get;set;}
+ }
+ 
+ class  Test
+	{
+		Bank t= new HDFC();
+		t.sum10;
+	 
+	 }        
