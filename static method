@@ -1,0 +1,38 @@
+class Student
+{
+  private int _studentId;
+  private string _studentName;
+  private static string _collegeName = "RD College";
+  public Student (int studentId, string studentName)
+  {
+    this._studentId = studentId;
+    this._studentName = studentName;
+  }
+  public override string ToString ()
+  {
+    return this._studentId + " " + this._studentName + " " +
+      Student._collegeName;
+  }
+  public static int Double (int x)
+  {
+    return x * x;
+  }
+}
+class Test
+{
+  static void Main (string[]args)
+  {
+    //Student st1 = new Student(101, "vivek");
+    //Student st2 = new Student(102, "Ramesh");
+    //Student st3 = new Student(103, "Suresh");
+    //System.Console.WriteLine(st3);
+    //System.Console.WriteLine(st2);
+
+
+    System.Console.WriteLine (Student.Double (2));
+    System.Console.WriteLine (Student.Double (4));
+    System.Console.WriteLine (Student.Double (8));
+
+  }
+}
+
