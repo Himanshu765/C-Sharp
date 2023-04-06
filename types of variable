@@ -1,0 +1,24 @@
+using System;
+class Test 
+{
+    double PIE =3.14; //  non static variable 
+    static int a=10;  // static variable
+       protected internal    const int b=20;// constant variable 
+    readonly string s=" Himanshu";
+    
+    static void Main() 
+    {
+      int c = 100;
+      const int num =121;
+      Test obj=new Test();
+      obj. PIE=obj.PIE+1;
+      
+    Console.WriteLine(" Local  value "+c);  
+    Console.WriteLine(" NON STATIC VALUE "+obj.PIE);
+    Console.WriteLine(" STATIC VALUE "+Test.a);
+    Console.WriteLine(" Const  VALUE "+Test.b);
+    Console.WriteLine(" Readlonly  VALUE "+obj.s);
+     Console.WriteLine(" Readlevel  VALUE "+num);
+ 
+  }
+}
